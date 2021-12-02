@@ -1,0 +1,158 @@
+:root {
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Verydarkblue: hsl(217, 54%, 11%);
+    --Verydarkblue1: hsl(216, 50%, 16%);
+    --Verydarkblue2: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    }
+    
+    *,
+    *::after,
+    *::before{
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+    }
+    
+    body {
+    
+        
+        font-size : 18px;
+        font-family: 'Outfit', sans-serif;
+        font-family: 'Red Hat Display', sans-serif;
+        background-color: var(--Verydarkblue);
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    
+        
+    
+    }
+    
+    .contenair {
+        width: 87%;
+        background :var(--Verydarkblue1);
+        margin-top: 4em; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 1em;
+    }
+    
+    .hero {
+        
+        max-width: 85%;
+        height: auto;
+        object-fit: cover;
+        margin-top: 24px;
+        border-radius: 10px;
+        
+    }
+    .content {
+        max-width: 85%;
+        
+    }
+     
+    a {
+        text-decoration: none;
+        font-family: inherit;
+        
+    } 
+    h1 {
+        color :hsl(0, 0%, 100%);
+        font-size: 20px;
+        margin-top: 26px;
+    }
+    .description {
+        margin-top: 16px;
+        color : var(--Softblue);
+        line-height: 25px;
+        font-size: 15px;
+         
+    }
+    
+    .price-cooldown {
+        display:flex;
+        gap: 97px;
+        margin-top:15px;
+    }
+    .price {
+        display: -webkit-inline-box;
+        gap: 5px;
+        color: var(--Cyan);
+        /* font-size: 14px; */
+        font-weight: 300;
+    }
+    
+    .eth {
+        font-size: 15px;
+    }
+    
+    .cooldown {
+        display: -webkit-inline-box;
+        gap: 5px;
+    }
+    .cooltext {
+        color: var(--Softblue);
+        font-size: 15px;
+        font-weight: 100;
+    }
+    hr.solid {
+        border-top: 1px solid var(--Softblue);
+        opacity: 0.2;
+        margin-top: 10px;
+        width : 260px;
+    }
+    
+    .footer {
+        display: flex;
+        margin-top: 15px;
+        align-items: center;
+        width: 85%;
+        gap: 15px;
+        margin-bottom: 22px;
+    }
+    
+    .avatar {
+        width: 34px;
+        border: 1px solid white;
+        border-radius: 50%;
+    }
+
+    .copyright  {
+        display: flex;
+    }
+    .copyright > p {
+        color: var(--Softblue);
+        font-size: 14px;
+    }
+    .copyright > a {
+        text-decoration:none;
+        color: white;
+        font-size: 14px;
+        margin-left: 6px;
+    }
+    .attribution {
+        color: var(--Softblue);
+        margin-top : 7px;
+    }
+    .attribution > a {
+        color: white
+    }
+
+    @media (max-width: 2200px) and (min-width: 376px) {
+        .contenair {
+            max-width: 359px;
+            margin-top: 156px;
+        }
+        h1 {
+            margin-top:23px;
+        }
+        .price-cooldown {
+            margin-top: 37px
+        }
+
+
+
+    }
